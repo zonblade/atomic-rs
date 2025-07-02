@@ -2,6 +2,13 @@
 name = "atomic-id"
 version = "0.1.0"
 edition = "2024"
+authors = ["ZonBlade"]
+description = "Very fast and unique id generation"
+license = "MIT"
+repository = "https://github.com/zonblade/atomic-rs"
+readme = "./README.md"
+keywords = ["uid", "id", "generate id", "id generator"]
+categories = ["cryptography", "unique id", "uid", "utility"]
 
 [dependencies]
 
