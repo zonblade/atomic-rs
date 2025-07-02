@@ -1,0 +1,26 @@
+[package]
+name = "atomic-id"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bson = "2.15.0"
+cuid = "1.3.3"
+getrandom = "0.3.3"
+lazy_static     = "1.5.0"
+num_cpus        = "1.16.0"
+twitter_snowflake = "1.0.2"
+uuid = "1.17.0"
+
+[features]
+default = []
+short = []
+
+[profile.release]
+opt-level      = 3          # best runtime speed
+lto            = "thin"     # or "fat" for small crates (<~100 kLoC)
+codegen-units  = 1          # maximises inlining
+panic          = "abort"    # removes unwinding machinery
+incremental    = false      # clean IR for LLVM
+strip          = "symbols"  # requires Rust ≥1.77 (smaller binary)
+debug          = false
