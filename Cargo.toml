@@ -7,8 +7,8 @@ description = "Very fast and unique id generation"
 license = "MIT"
 repository = "https://github.com/zonblade/atomic-rs"
 readme = "./README.md"
-keywords = ["uid", "id", "generate id", "id generator"]
-categories = ["cryptography", "unique id", "uid", "utility"]
+keywords = ["atomic-id", "unique-id", "id-generator", "concurrency", "lock-free", "cryptography"]
+categories = ["utilities", "cryptography", "concurrency"]
 
 [dependencies]
 
